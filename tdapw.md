@@ -10,5 +10,6 @@
 ```
 cp pwscf.NAnorm.dat pwscf.TDPOP.in
 ```
+找到要更改的第k个
 然后执行 `tdpw.x pw.MoS2.scf.in`
 ## 三.输出
