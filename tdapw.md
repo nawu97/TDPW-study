@@ -6,4 +6,9 @@
       $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 ## 二.输入
 ###1.
+### 2.更改占据数
+```
+cp pwscf.NAnorm.dat pwscf.TDPOP.in
+```
+然后执行 `tdpw.x pw.MoS2.scf.in`
 ## 三.输出
