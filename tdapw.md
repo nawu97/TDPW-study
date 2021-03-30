@@ -17,6 +17,11 @@ cp pwscf.NAnorm.dat pwscf.TDPOP.in
 ### 3.nstep的选择
 #### 1）edt：默认10au，精确:20au (看模拟的现象有多长视情况而定) 1 a.u.=4.8378 * 10^-17 s
 #### 2）nstep：不用过分考虑，TDAPW可以续算
+##### A.如果是scf/nscf默认是1
+##### B.如果是md默认是50
+<img width="1054" alt="nstep" src="https://user-images.githubusercontent.com/76439954/112928592-60ae7300-90c3-11eb-9fe8-bee9c1309790.PNG">
+
+
 #### 3）mstep：默认500,是将edt分成mstep份，按照每一份演化
 #### 4）dt：(针对离子)固定原子情况下，dt=0；其他情况下，dt=edt
 
