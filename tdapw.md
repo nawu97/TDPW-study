@@ -6,7 +6,8 @@
       $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 ## 二.输入
 ### 1.参数表
-<img width="772" alt="基本参数" src="https://user-images.githubusercontent.com/76439954/112942655-ed195f80-90dc-11eb-97f8-4860a67c505d.PNG">
+<img width="772" alt="基本参数" src="https://user-images.githubusercontent.com/76439954/112947961-e93d0b80-90e3-11eb-8f3b-16320c21cb92.PNG">
+
 
 ### 2.更改占据数
 ```
@@ -33,3 +34,5 @@ NVT:如果只关心结构不关心时间演化，用NVT随便跑，跑的时间�
 
 NVE：NVT比NVE多了热浴的影响，采样更快，NVE跑出的构型不多，完全孤立，体系类似平衡位置振荡
 ## 三.输出
+![Uploading 输出文件.PNG…]()
+
