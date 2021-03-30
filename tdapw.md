@@ -21,5 +21,7 @@ cp pwscf.NAnorm.dat pwscf.TDPOP.in
 
 ### 4.系综
 NVT:如果只关心结构不关心时间演化，用NVT随便跑，跑的时间越长越好，采样间隔越大越好
-NVE：NVT比NVE多了热浴的影响，采样更快，NVE跑出的构型不多
+
+
+NVE：NVT比NVE多了热浴的影响，采样更快，NVE跑出的构型不多，完全孤立，体系类似平衡位置振荡
 ## 三.输出
