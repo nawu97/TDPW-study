@@ -34,5 +34,6 @@ NVT:如果只关心结构不关心时间演化，用NVT随便跑，跑的时间�
 
 NVE：NVT比NVE多了热浴的影响，采样更快，NVE跑出的构型不多，完全孤立，体系类似平衡位置振荡
 ## 三.输出
-![Uploading 输出文件.PNG…]()
+<img width="624" alt="输出文件" src="https://user-images.githubusercontent.com/76439954/112948493-99ab0f80-90e4-11eb-95cd-8d220f69b92d.PNG">
+
 
