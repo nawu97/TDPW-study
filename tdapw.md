@@ -5,7 +5,9 @@
       <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
       $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 ## 二.输入
-###1.
+### 1.参数表
+<img width="772" alt="基本参数" src="https://user-images.githubusercontent.com/76439954/112942655-ed195f80-90dc-11eb-97f8-4860a67c505d.PNG">
+
 ### 2.更改占据数
 ```
 cp pwscf.NAnorm.dat pwscf.TDPOP.in
