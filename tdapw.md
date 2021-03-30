@@ -12,6 +12,7 @@ cp pwscf.NAnorm.dat pwscf.TDPOP.in
 ```
 找到要更改的第k个
 然后执行 `tdpw.x pw.MoS2.scf.in`
+#### 记得将`&CONTROL`里面的`tddft_is_on`设置成`true`
 
 ### 3.nstep的选择
 #### 1）edt：默认10au，精确:20au (看模拟的现象有多长视情况而定) 1 a.u.=4.8378 * 10^-17 s
