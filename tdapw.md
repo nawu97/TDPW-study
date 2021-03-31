@@ -3,9 +3,13 @@
 参考：@https://tdap-help.github.io/TDAPW/
 ## TDPAW是基于QE（平面波）的含时第一性原理软件
 ## 一.理论
-      对比TDAP@http://tdap.iphy.ac.cn/  （基于原子轨道基），TDPW是基于平面波基基底`{G}`来应用TDDFT,在平面波基底下，含时的Kohn-Sham(TDKS)态
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-      $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+      对比TDAP
+      @http://tdap.iphy.ac.cn/  ，TDPW是基于平面波基基底`{G}`来应用TDDFT,在平面波基底下，含时的Kohn-Sham(TDKS)态
+      基本理论如下：
+<img width="921" alt="捕获" src="https://user-images.githubusercontent.com/76439954/113078104-e9d6b000-917e-11eb-963e-6ca41d825ac4.PNG">
+<img width="636" alt="2" src="https://user-images.githubusercontent.com/76439954/113078117-ee9b6400-917e-11eb-8504-26275d46ab7a.PNG">
+<img width="598" alt="3" src="https://user-images.githubusercontent.com/76439954/113078122-f22eeb00-917e-11eb-8814-88f9ea7c69b0.PNG">
+
 ## 二.输入
 ### 1.参数表
 <img width="772" alt="基本参数" src="https://user-images.githubusercontent.com/76439954/112947961-e93d0b80-90e3-11eb-8f3b-16320c21cb92.PNG">
