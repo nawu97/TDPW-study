@@ -69,7 +69,7 @@ pwscf.z.magTDKS.dat
 
 ### 3.新功能
 新功能:
-        1. 新增加了一些参数: https://tdap-help.github.io/TDAPW/20-Input/2020-04-18-Parameter/ \n
+        1. 新增加了一些参数: https://tdap-help.github.io/TDAPW/20-Input/2020-04-18-Parameter/        
         2. 默认不会输出向0时刻的基矢投影, 设置 cal_pop0 = T 进行计算
         3. 指定DFT任意k点、能级的占据数: td_constrained = T;  TDDFT的初态占据数反转: pwscf.TDPOP.in或续算
         4. 输出KS/TDKS波函数到pwscfN.save/pwscfNtdks.save: nwevc = N,  punchks/punchtdks = T, 可使用QE的后处理模块进行额外计算, i.e. wannier中心拟合
