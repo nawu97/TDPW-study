@@ -12,7 +12,7 @@
 
 ## 二.输入
 ### 1.参数表
-<img width="772" alt="基本参数" src="https://user-images.githubusercontent.com/76439954/112947961-e93d0b80-90e3-11eb-8f3b-16320c21cb92.PNG">
+<img width="772" alt="112947961-e93d0b80-90e3-11eb-8f3b-16320c21cb92" src="https://user-images.githubusercontent.com/76439954/114350995-94e26300-9b9c-11eb-9cea-f74de6ae03d9.png">
 
 
 ### 2.更改占据数
