@@ -68,25 +68,26 @@ pwscf.z.magTDKS.dat
 ```
 
 ### 3.新功能
-新功能:
+新功能:    
+
         1. 新增加了一些参数: https://tdap-help.github.io/TDAPW/20-Input/2020-04-18-Parameter/        
-        2. 默认不会输出向0时刻的基矢投影, 设置 cal_pop0 = T 进行计算
-        3. 指定DFT任意k点、能级的占据数: td_constrained = T;  TDDFT的初态占据数反转: pwscf.TDPOP.in或续算
-        4. 输出KS/TDKS波函数到pwscfN.save/pwscfNtdks.save: nwevc = N,  punchks/punchtdks = T, 可使用QE的后处理模块进行额外计算, i.e. wannier中心拟合
-        5. k点电流: td_current_k = T
-        6. 考虑tdks交叉项对电荷密度的贡献: use_tdks = T (同时建议设置td_ht=2 提高收敛性), (如果要得到震荡的Dipole信号此处要设为T)
-        7. 长度规范 tefield = T, GaugeField = F, 电场的空间分布: emaxpos, eopreg, 见QE
-        8. 速度规范(default) GaugeField = T
-        9. 进行BO计算/scf/relax/nscf/..., tddft_is_on = F
-        10. 在考虑SOC时输出电流 current_debug = T
-        11. 磁场 &SYSTEM  B_field(i)=0.1, i=1,3  /
-        12. 让程序保存数据正常结束计算:在运行目录创建TDPWSTOP文件; 让程序暂时休息不停止, 创建TDPWSLEEP, 删除TDPWSLEEP文件后，自动恢复计算
-        13. 续算, 前提是程序正常结束/创建TDPWSTOP让程序结束, 不要删除任何文件, 输入参数restart_mode = 'restart', 程序会续写投影等占据数文件.
-        14. 长度规范: theta(-t)电场: LastDiagonE, kick/delta电场: LastDiagonExp, 同时只设置TDEFIELD.in的第二行(如果设置第三行及以后,则会在模拟过程加光)
-        15. 速度规范: theta(-t)电场: LastDiagonA, 同时只设置TDEFIELD.in的第二行(如果设置第三行及以后,则会在模拟过程加光)
-        16. 计算Dipole td_outputD = T, 计算角动量td_outputL=T
-        17. Dipole/角动量的原点默认由emaxpos, eopreg定义, 也可以通过 use_origin    =   T, originx=0.5, originy=0.5, originz=0.5 指定
-        18. debug性质输出轨道角动量lorbm = T, 参数和计算模块同QE，计算的性质暂时不明朗
-        19. BUG修复: TDEFIELD.in 内容的行数不用设置和nstep一致, 缺少的行会自动补上0, 不再报错终止.
-        20. Image并行计算/RP-TDAP计算,复制tdpw.x为manytdpw.x, 脚本EXEC用manytdpw.x, 以文件名区分是否Image并行. k点并行支持同QE.
+        2. 默认不会输出向0时刻的基矢投影, 设置 cal_pop0 = T 进行计算      
+        3. 指定DFT任意k点、能级的占据数: td_constrained = T;  TDDFT的初态占据数反转: pwscf.TDPOP.in或续算     
+        4. 输出KS/TDKS波函数到pwscfN.save/pwscfNtdks.save: nwevc = N,  punchks/punchtdks = T, 可使用QE的后处理模块进行额外计算, i.e. wannier中心拟合      
+        5. k点电流: td_current_k = T     
+        6. 考虑tdks交叉项对电荷密度的贡献: use_tdks = T (同时建议设置td_ht=2 提高收敛性), (如果要得到震荡的Dipole信号此处要设为T)    
+        7. 长度规范 tefield = T, GaugeField = F, 电场的空间分布: emaxpos, eopreg, 见QE    
+        8. 速度规范(default) GaugeField = T   
+        9. 进行BO计算/scf/relax/nscf/..., tddft_is_on = F   
+        10. 在考虑SOC时输出电流 current_debug = T   
+        11. 磁场 &SYSTEM  B_field(i)=0.1, i=1,3  /   
+        12. 让程序保存数据正常结束计算:在运行目录创建TDPWSTOP文件; 让程序暂时休息不停止, 创建TDPWSLEEP, 删除TDPWSLEEP文件后，自动恢复计算   
+        13. 续算, 前提是程序正常结束/创建TDPWSTOP让程序结束, 不要删除任何文件, 输入参数restart_mode = 'restart', 程序会续写投影等占据数文件.    
+        14. 长度规范: theta(-t)电场: LastDiagonE, kick/delta电场: LastDiagonExp, 同时只设置TDEFIELD.in的第二行(如果设置第三行及以后,则会在模拟过程加光)   
+        15. 速度规范: theta(-t)电场: LastDiagonA, 同时只设置TDEFIELD.in的第二行(如果设置第三行及以后,则会在模拟过程加光)    
+        16. 计算Dipole td_outputD = T, 计算角动量td_outputL=T   
+        17. Dipole/角动量的原点默认由emaxpos, eopreg定义, 也可以通过 use_origin    =   T, originx=0.5, originy=0.5, originz=0.5 指定   
+        18. debug性质输出轨道角动量lorbm = T, 参数和计算模块同QE，计算的性质暂时不明朗    
+        19. BUG修复: TDEFIELD.in 内容的行数不用设置和nstep一致, 缺少的行会自动补上0, 不再报错终止.   
+        20. Image并行计算/RP-TDAP计算,复制tdpw.x为manytdpw.x, 脚本EXEC用manytdpw.x, 以文件名区分是否Image并行. k点并行支持同QE.   
 
