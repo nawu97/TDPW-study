@@ -91,3 +91,23 @@ pwscf.z.magTDKS.dat
         19. BUG修复: TDEFIELD.in 内容的行数不用设置和nstep一致, 缺少的行会自动补上0, 不再报错终止.   
         20. Image并行计算/RP-TDAP计算,复制tdpw.x为manytdpw.x, 脚本EXEC用manytdpw.x, 以文件名区分是否Image并行. k点并行支持同QE.   
 
+
+### 4.常见问题
+### 1）
+问: 还有 use_origin 参数设置成 F 的含义是？
+答: 默认计算时，光场的V=eEr, Dipole =\int rho(r)rdr, ....等F(r)的计算，需要定义原点，默认use_origin =F
+use_origin =F的含义是是使用QE的	emaxpos和eopreg定义原点和r的取值
+use_origin =T通过人为输入originx,originy,originz设置原点位置，分数坐标，范围【0-1】
+![微信图片_20210420161914](https://user-images.githubusercontent.com/76439954/115362491-2af93780-a1f4-11eb-9fea-f4e42dc13c1e.jpg)
+### 2）
+QE的pp.x可以直接画各个轨道的自旋空间分布，使用：
+```
+nwevc        =  N
+punchks       =  F
+punchtdks     =  F
+```
+输出各个时刻的ks/tdks即可以自旋的空间分布，积分就是mag.EIG文件
+
+<img width="721" alt="微信图片_20210420162054" src="https://user-images.githubusercontent.com/76439954/115362715-67c52e80-a1f4-11eb-8bd0-008b48d657f3.png">
+
+
