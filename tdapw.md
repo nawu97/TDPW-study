@@ -95,9 +95,15 @@ pwscf.z.magTDKS.dat
 ### 4.常见问题
 ### 1）
 问: 还有 use_origin 参数设置成 F 的含义是？
-答: 默认计算时，光场的V=eEr, Dipole =\int rho(r)rdr, ....等F(r)的计算，需要定义原点，默认use_origin =F
-use_origin =F的含义是是使用QE的	emaxpos和eopreg定义原点和r的取值
-use_origin =T通过人为输入originx,originy,originz设置原点位置，分数坐标，范围【0-1】
+答: 默认计算时，光场的V=eEr, Dipole =\int rho(r)rdr, ....等F(r)的计算，需要定义原点，默认use_origin =F   
+use_origin =F的含义是是使用QE的	emaxpos和eopreg定义原点和r的取值   
+use_origin =T通过人为输入originx,originy,originz设置原点位置，分数坐标，范围【0-1】   
+等价的：
+使用  emaxpos = 0.95 !max position   
+  eopreg = 0.1   !emaxpos+eopreg min position   
+或者use_origin=T；originx=0.5   
+originy=0.5   
+originz=0.5   
 ![微信图片_20210420161914](https://user-images.githubusercontent.com/76439954/115362491-2af93780-a1f4-11eb-9fea-f4e42dc13c1e.jpg)
 ### 2）
 QE的pp.x可以直接画各个轨道的自旋空间分布，使用：
@@ -109,5 +115,12 @@ punchtdks     =  F
 输出各个时刻的ks/tdks即可以自旋的空间分布，积分就是mag.EIG文件
 
 <img width="721" alt="微信图片_20210420162054" src="https://user-images.githubusercontent.com/76439954/115362715-67c52e80-a1f4-11eb-8bd0-008b48d657f3.png">
+
+
+### 3)
+TDPW模拟过程中dt的设置
+1. 如果不设置dt，默认dt=20au，显然不适合跑tddft   
+2. 设置dt=edt是电子原子一起演化，即Ehrenfest计算   
+3. 设置dt=1E-15或0.0，为固定原子位置，只演化电子坐标，为TDDFT计算   
 
 
