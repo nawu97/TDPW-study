@@ -12,7 +12,10 @@
 
 ## 二.输入
 ### 1.参数表
-<img width="772" alt="114350995-94e26300-9b9c-11eb-9cea-f74de6ae03d9" src="https://user-images.githubusercontent.com/76439954/116408557-84e9a500-a865-11eb-9e1a-7f1bdd99f3dc.png">
+<img width="772" alt="para" src="https://user-images.githubusercontent.com/76439954/117662646-5dce9400-b1d2-11eb-918a-3ad767b2bb8b.png">
+<img width="585" alt="td_ht" src="https://user-images.githubusercontent.com/76439954/117662667-62934800-b1d2-11eb-95a6-35b26e60573d.png">
+<img width="529" alt="td_ht1" src="https://user-images.githubusercontent.com/76439954/117662673-64f5a200-b1d2-11eb-9079-e428f8b729ab.png">
+
 
 
 
