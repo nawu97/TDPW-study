@@ -1,6 +1,9 @@
 # TDPW-study
 
 参考：@https://tdap-help.github.io/TDAPW/
+# 注意事项：
+## td_ht=2只有TDKS轨道演化的时候提高收敛性的
+
 ## TDPAW是基于QE（平面波）的含时第一性原理软件
 ## 一.理论
       对比TDAP
