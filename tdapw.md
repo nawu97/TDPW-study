@@ -96,7 +96,10 @@ pwscf.z.magTDKS.dat
         17. Dipole/角动量的原点默认由emaxpos, eopreg定义, 也可以通过 use_origin    =   T, originx=0.5, originy=0.5, originz=0.5 指定   
         18. debug性质输出轨道角动量lorbm = T, 参数和计算模块同QE，计算的性质暂时不明朗    
         19. BUG修复: TDEFIELD.in 内容的行数不用设置和nstep一致, 缺少的行会自动补上0, 不再报错终止.   
-        20. Image并行计算/RP-TDAP计算,复制tdpw.x为manytdpw.x, 脚本EXEC用manytdpw.x, 以文件名区分是否Image并行. k点并行支持同QE.   
+        20. Image并行计算/RP-TDAP计算,复制tdpw.x为manytdpw.x, 脚本EXEC用manytdpw.x, 以文件名区分是否Image并行. k点并行支持同QE.
+        21. 选用不同的磁结构，然后进行固定轨迹演化
+        <img width="597" alt="微信图片_20211125120309" src="https://user-images.githubusercontent.com/76439954/143377876-aae9fb91-1730-4271-918b-16af4269f6d5.png">
+
 
 
 ### 4.常见问题
@@ -129,5 +132,9 @@ TDPW模拟过程中dt的设置
 1. 如果不设置dt，默认dt=20au，显然不适合跑tddft   
 2. 设置dt=edt是电子原子一起演化，即Ehrenfest计算   
 3. 设置dt=1E-15或0.0，为固定原子位置，只演化电子坐标，为TDDFT计算   
+
+
+### 5.增加功能（2021/11/25）
+<img width="426" alt="微信图片_20211125120148" src="https://user-images.githubusercontent.com/76439954/143377785-ff270ea3-22bd-41b3-9e1c-9b5d7a2a65b5.png">
 
 
