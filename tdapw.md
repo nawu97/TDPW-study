@@ -101,6 +101,7 @@ pwscf.z.magTDKS.dat
         <img width="597" alt="微信图片_20211125120309" src="https://user-images.githubusercontent.com/76439954/143377876-aae9fb91-1730-4271-918b-16af4269f6d5.png">
 
 
+<img width="597" alt="微信图片_20211125120309" src="https://user-images.githubusercontent.com/76439954/143377955-aeb6ea8a-91b7-4146-ae75-7334a8c8fed3.png">
 
 ### 4.常见问题
 ### 1）
